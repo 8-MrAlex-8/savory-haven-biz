@@ -1,0 +1,89 @@
+@import "../node_modules/bootstrap/scss/functions.scss";
+@import "../node_modules/bootstrap/scss/variables.scss";
+@import "../node_modules/bootstrap/scss/mixins.scss";
+
+// Define custom theme colors
+$custom-colors: (
+  "oakbrown": #3c2f07,
+  "tan": #b68d40,
+  "cream": #f4ebd0,
+  "charcoal": #122620,
+  "darkvanilla": #d7c6b4
+);
+
+$spacers: (
+  0: 0rem,
+  0_50: 0.5rem,
+  1: 1rem, // Default is 4px (0.25rem)
+  1_50: 1.5rem,
+  2: 2rem,  // Default is 8px (0.5rem)
+  2_50: 2.5rem,
+  3: 3rem,    // Default is 16px (1rem)
+  3_50: 3.5rem,
+  4: 4rem,  // Default is 24px (1.5rem)
+  4_50: 4.5rem,
+  5: 5rem,     // Default is 48px (3rem)
+  5_50: 5.5rem,
+  6: 6rem,
+  6_50: 6.5rem,
+  7: 7rem,
+  7_50: 7.5rem,
+  8: 8rem,
+  8_50: 8.5rem,
+);
+
+// Merge with Bootstrap's default colors
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$sides: "t", "r", "b", "l";
+
+// margin
+@each $s in $sides {
+    @for $i from 6 through 16 {
+        // example: .mt-1
+        .m#{$s}-#{$i} {
+            @if $s == "t" {
+                margin-top: #{$i}rem !important;
+            }
+
+            @else if $s == "r" {
+                margin-right: #{$i}rem !important;
+            }
+
+            @else if $s == "b" {
+                margin-bottom: #{$i}rem !important;
+            }
+
+            @else if $s == "l" {
+                margin-left: #{$i}rem !important;
+            }
+        }
+    }
+}    
+
+// padding
+@each $s in $sides {
+    @for $i from 6 through 16 {
+        // example: .mt-1
+        .p#{$s}-#{$i} {
+            @if $s == "t" {
+                padding-top: #{$i}rem !important;
+            }
+
+            @else if $s == "r" {
+                padding-right: #{$i}rem !important;
+            }
+
+            @else if $s == "b" {
+                padding-bottom: #{$i}rem !important;
+            }
+
+            @else if $s == "l" {
+                padding-left: #{$i}rem !important;
+            }
+        }
+    }
+}    
+
+// Import Bootstrap after defining variables
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

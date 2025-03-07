@@ -1,0 +1,16 @@
+{
+  "name": "savory-haven",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass ./styles/styles.scss ./styles/styles.css",
+    "watch": "sass --watch styles/styles.scss styles/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
