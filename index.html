@@ -7,17 +7,15 @@
     <link rel="icon" type="image/x-icon" href="./assets/bread.ico">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/styles.css"> <!-- custom definitions -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
 </head>
 <body>
     <!-- Content starts here -->
 
     <!-- Introduction -->
-    <section id = "introduction-section">
+    <section id = "introduction-section"> <!-- height: 100vh -->
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg bg-oakbrown shadow-lg">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-oakbrown shadow-lg"> <!-- height: 15vh -->
+        <div class="container-fluid"> 
           <a id ="logo" class="navbar-brand text-light ms-1 me-2" href="./index.html">
             <img src = "assets/bread-logo.png" height = "65" width = "65"/>
           </a>
@@ -51,10 +49,10 @@
       </nav>
 
       <!-- Intro Content -->
-      <div class = "image-container h-100">
-        <div class="image-overlay d-flex flex-column justify-content-center align-items-center text-white">
-          <h1 class = "pt-3 px-1_50 text-center"> From our hearts, to the oven, to you.</h1>
-          <p class = "py-3_50 px-4 px-sm-6 px-lg-7 text-center lh-lg">
+      <div class = "image-container bg-no-repeat">  <!-- height: 85vh -->
+        <div class="image-overlay text-white d-flex flex-column justify-content-center align-items-center gap-1 gap-lg-3 ">
+          <h1 class = "px-1_50 text-center"> From our hearts, to the oven, to you.</h1>
+          <p class = "px-4 px-sm-3 px-md-5 px-lg-7 text-center lh-lg">
             We, at Savory Haven, offer more than just delicious treats. With our warm, inviting
             ambiance and a tasteful selection of jazz and smooth pop music, it's the perfect 
             spot to unwind. Enjoy an assortment of delicacies--from our freshly-baked bread to 
@@ -66,25 +64,29 @@
       </div>
     </section>
 
-    <!-- Bestsellers
-    <section id = "bestseller-carousel">
-        <div class = "carousel-container">
-            <div class = "carousel-description-item px-5">
-                <h1 class = "pb-3"> Our bestsellers. </h1>
-                <p class = "pt-3"> Discover our most-loved treats! From perfectly flaky pastries to decadent desserts, 
+    <!-- Bestsellers -->
+    <section id = "bestseller-carousel" class = "bg-white text-black">
+        <div class = "carousel-container d-flex flex-row justify-content-space-evenly align-items-center h-100
+          py-xs-6 py-sm-3 py-md-4 py-lg-2 py-xl-0 gap-2 px-2 px-lg-3">
+            <!-- text -->
+            <div class = "carousel-description-item pe-lg-2_50 d-flex gap-sm-1 gap-xl-3 flex-column justify-content-center align-items-start h-100">
+                <h1 class = "fs-1"> Our bestsellers. </h1>
+                <p class = "fs-6"> Discover our most-loved treats! From perfectly flaky pastries to decadent desserts, 
                   this selection showcases the irresistible favorites that keep customers coming back for more. 
                   Indulge in the best we have to offer, baked fresh daily. </p>
             </div>
-            <div class = "image-carousel-item">
-                <div id="carouselExampleCaptions" class="carousel slide mx-5" data-bs-ride="carousel">
+
+            <!-- pictures -->
+            <div class = "image-carousel-item w-100 h-auto py-8 px-1">
+                <div id="carouselExampleCaptions" class="carousel slide">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
             
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
+                    <div class="carousel-inner w-100">
+                      <div class="carousel-item active w-100">
                         <img src="./assets/croissant-bestseller.jpg" class="d-block w-100 bestseller-img" alt="...">
                         <div class="dark-container">
                           <div class = "carousel-description">
@@ -121,105 +123,139 @@
                       <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-            </div>
+            </div> 
         </div>
     </section>
-     -->
 
-    <!-- Reviews
-    <section id = "reviews-section">
-      <div class = "d-flex flex-column align-items-center pt-5">
-        <h2> Our customers love us! </h2>
-        <p> 
+    <!-- Reviews -->
+    <section id = "reviews-section" class = "bg-cream py-4 pb-3">
+      <div class = "d-flex flex-column justify-content-center align-items-center">
+        <h2 class = "text-center"> Our customers love us! </h2>
+        <p class = "text-center pb-1 fs-6 px-4"> 
           Since 2023, Savory Haven has served over 300 happy patrons and delivered to 12 nearby cities! 
           Take a look at what our lovely customers have to say.</p>
       </div>
-     
-      <div class="row" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 2rem 3rem;">
-        <div class="col">
-          <div class="card">
-            <img src="./assets/review-1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Maria Santos</h5>
-              <p>⭐️ 5.0</p>
-              <p class="card-text">
-                "Savory Haven is my go-to spot for a peaceful afternoon! The jazz music, 
-                the aroma of freshly baked croissants, and their smooth cappuccino make it 
-                a perfect escape. Highly recommend their chocolate lava cake—it's divine!"
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="./assets/review-2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Maria Bendita</h5>
-              <p>⭐️ 4.7</p>
-              <p class="card-text">
-                "The shortcakes here are rain-deerly delightful! Soft sponge, sweet fruit slices, and yummy icing. 
-                The smooth pop playlist was something I enjoyed, too, while savoring their caramel latte. 
-                Definitely coming back for more!"
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="./assets/review-3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Ninang Raine</h5>
-              <p>⭐️ 4.3</p>
-              <p class="card-text">
-                "Their bread selection is incredible! I love the ube cheese pandesal—just the right blend of sweet and salty. 
-                The ambiance is cozy, though it can get a little crowded during weekends. Still worth it!"
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="./assets/review-4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Chloe Eliza Sandoval</h5>
-              <p>⭐️ 5.0</p>
-              <p class="card-text">
-                "A whole new world of flavors! Their blueberry danish and strawberry tarts are showstoppers. The staff is friendly 
-                and the overall vibe is just perfect. Feels like a little slice of heaven in every bite."
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="./assets/review-5.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Vivian Ning</h5>
-              <p>⭐️ 4.8</p>
-              <p class="card-text">
-                "The cafe's playlist sets the mood while you indulge in their melt-in-your-mouth butter croissants. 
-                It's an excellent place to relax, meet friends, or even work on your laptop. Their brewed coffee pairs perfectly with 
-                everything!"
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="./assets/review-6.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Aeri Uchinaga</h5>
-              <p>⭐️ 5.0</p>
-              <p class="card-text">
-                "Savory Haven's cinnamon rolls are a must-try! The sweetness level is just right, and the texture is fluffy yet firm. 
-                The only downside is I wish they had more outlets for charging. Otherwise, a great bakery experience!"
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>  -->
 
+      <div class = "container">
+          <div class = "row" data-masonry='{"percentPosition": true }'>
+            <div class="mt-2 col-12 col-md-6 col-lg-4">
+              <div class="card">
+                <img src="./assets/review-5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Vivian Ning</h5>
+                  <p>⭐️ 4.8</p>
+                  <p class="card-text">
+                    "The cafe's playlist sets the mood while you indulge in their melt-in-your-mouth butter croissants. 
+                    It's an excellent place to relax, meet friends, or even work on your laptop. Their brewed coffee pairs perfectly with 
+                    everything!"
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-2 col-12 col-md-6 col-lg-4">
+              <div class="card">
+                <img src="./assets/review-6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Aeri Uchinaga</h5>
+                  <p>⭐️ 5.0</p>
+                  <p class="card-text">
+                    "Savory Haven's cinnamon rolls are a must-try! The sweetness level is just right, and the texture is fluffy yet firm. 
+                    The only downside is I wish they had more outlets for charging. Otherwise, a great bakery experience!"
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-2 col-12 col-md-6 col-lg-4">
+              <div class="card">
+                <img src="./assets/review-1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Maria Santos</h5>
+                  <p>⭐️ 5.0</p>
+                  <p class="card-text">
+                    "Savory Haven is my go-to spot for a peaceful afternoon! The jazz music, 
+                    the aroma of freshly baked croissants, and their smooth cappuccino make it 
+                    a perfect escape. Highly recommend their chocolate lava cake—it's divine!"
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-2 col-12 col-md-6 col-lg-4">
+              <div class="card">
+                <img src="./assets/review-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Maria Bendita</h5>
+                  <p>⭐️ 4.7</p>
+                  <p class="card-text">
+                    "The shortcakes here are rain-deerly delightful! Soft sponge, sweet fruit slices, and yummy icing. 
+                    The smooth pop playlist was something I enjoyed, too, while savoring their caramel latte. 
+                    Definitely coming back for more!"
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-2 col-12 col-md-6 col-lg-4">
+              <div class="card">
+                <img src="./assets/review-3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Ninang Raine</h5>
+                  <p>⭐️ 4.3</p>
+                  <p class="card-text">
+                    "Their bread selection is incredible! I love the ube cheese pandesal—just the right blend of sweet and salty. 
+                    The ambiance is cozy, though it can get a little crowded during weekends. Still worth it!"
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-2 col-12 col-md-6 col-lg-4">
+              <div class="card">
+                <img src="./assets/review-4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Chloe Eliza Sandoval</h5>
+                  <p>⭐️ 5.0</p>
+                  <p class="card-text">
+                    "A whole new world of flavors! Their blueberry shortcake and strawberry tarts are showstoppers. The staff is friendly 
+                    and the overall vibe is just perfect. Feels like a little slice of heaven in every bite."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-2 col-12 col-md-6 col-lg-4">
+              <div class="card">
+                <img src="./assets/review-7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Olivia Ramirez</h5>
+                  <p>⭐️ 5.0</p>
+                  <p class="card-text">
+                    "Hubby and I absolutely love this place! The hazelnut latte is my favorite, and the cozy atmosphere 
+                    makes it feel like home. Their coffee specials are always a delight!"
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-2 col-12 col-md-6 col-lg-4">
+              <div class="card">
+                <img src="./assets/review-8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Emily Nguyen</h5>
+                    <p>⭐️ 5.0</p>
+                    <p class="card-text">
+                      "I love spending my mornings here! The oat milk latte is my favorite, and their buttered 
+                      toast is just perfect. The quiet, relaxing atmosphere makes it ideal for reading or working."
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <div class = "bg-charcoal py-8">
+
+    </div>
+
+    <!-- scripts section -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 </body>
 </html>
 

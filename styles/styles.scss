@@ -1,6 +1,6 @@
-@import "../node_modules/bootstrap/scss/functions.scss";
-@import "../node_modules/bootstrap/scss/variables.scss";
-@import "../node_modules/bootstrap/scss/mixins.scss";
+@import "../node_modules/bootstrap/scss/_functions.scss";
+@import "../node_modules/bootstrap/scss/_variables.scss";
+@import "../node_modules/bootstrap/scss/_mixins.scss";
 
 // Define custom theme colors
 $custom-colors: (
@@ -11,6 +11,7 @@ $custom-colors: (
   "darkvanilla": #d7c6b4
 );
 
+// extending available spacers
 $spacers: (
   0: 0rem,
   0_50: 0.5rem,
@@ -30,6 +31,8 @@ $spacers: (
   7_50: 7.5rem,
   8: 8rem,
   8_50: 8.5rem,
+  9: 9rem,
+  9_50: 9.5rem
 );
 
 // Merge with Bootstrap's default colors
@@ -39,7 +42,7 @@ $sides: "t", "r", "b", "l";
 
 // margin
 @each $s in $sides {
-    @for $i from 6 through 16 {
+    @for $i from 10 through 16 {
         // example: .mt-1
         .m#{$s}-#{$i} {
             @if $s == "t" {
@@ -63,7 +66,7 @@ $sides: "t", "r", "b", "l";
 
 // padding
 @each $s in $sides {
-    @for $i from 6 through 16 {
+    @for $i from 10 through 16 {
         // example: .mt-1
         .p#{$s}-#{$i} {
             @if $s == "t" {
