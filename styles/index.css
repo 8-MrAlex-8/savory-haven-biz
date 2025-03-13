@@ -1,3 +1,7 @@
+body p {
+    font-size: clamp(1rem, 0.25rem + 0.25vw, 2rem) !important;
+}
+
 a.nav-link:not(.active):hover {
     color: #d6ad60 !important;
 }
@@ -16,11 +20,7 @@ a.nav-link:not(.active):hover {
 }
 
 #bestseller-carousel {
-    height: 80vh;
-}
-
-.carousel-description-item {
-    height: 100% !important;
+    padding: 2rem 0;
 }
 
 .carousel-item {
@@ -52,13 +52,57 @@ a.nav-link:not(.active):hover {
     margin: 1rem 3rem;
 }
 
+.carousel-item > img {
+    filter:brightness(0.6);
+}
+
+
 @media (max-width: 575px) {
+    /* xsmall */
     h1 {
         font-size: calc(1.2rem + 1.5vw) !important;
     }
 
     .image-container {
         height: 100vh;
-        font-size: 0.85rem !important;
+    }
+
+    #carouselExampleCaptions {
+        width: 75vw !important;
+    }
+} 
+
+@media (min-width: 575px) {
+    /* small */
+    #carouselExampleCaptions {
+        width: 70vw !important; 
+    }
+}
+
+@media (min-width: 768px) {
+    /* medium */
+    #carouselExampleCaptions {
+        width: 60vw !important;
+    }
+}
+
+@media (min-width: 820px) and (max-width: 992px) {
+    #carouselExampleCaptions {
+        width: 56vw !important;
+    }
+}
+
+@media (min-width: 992px) {
+    /*large*/
+    #carouselExampleCaptions {
+        width: 50vw !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    /*extra large*/
+
+    #carouselExampleCaptions {
+        width: 100vw !important;
     }
 }

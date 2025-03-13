@@ -52,7 +52,7 @@
       <div class = "image-container bg-no-repeat">  <!-- height: 85vh -->
         <div class="image-overlay text-white d-flex flex-column justify-content-center align-items-center gap-1 gap-lg-3 ">
           <h1 class = "px-1_50 text-center"> From our hearts, to the oven, to you.</h1>
-          <p class = "px-4 px-sm-3 px-md-5 px-lg-7 text-center lh-lg">
+          <p class = "px-4 px-sm-3 px-lg-5 text-center lh-lg">
             We, at Savory Haven, offer more than just delicious treats. With our warm, inviting
             ambiance and a tasteful selection of jazz and smooth pop music, it's the perfect 
             spot to unwind. Enjoy an assortment of delicacies--from our freshly-baked bread to 
@@ -66,64 +66,56 @@
 
     <!-- Bestsellers -->
     <section id = "bestseller-carousel" class = "bg-white text-black">
-        <div class = "carousel-container d-flex flex-row justify-content-space-evenly align-items-center h-100
-          py-xs-6 py-sm-3 py-md-4 py-lg-2 py-xl-0 gap-2 px-2 px-lg-3">
+        <div class = "carousel-container d-flex flex-column flex-xl-row justify-content-center align-items-center gap-2 px-lg-3 py-1_50">
             <!-- text -->
-            <div class = "carousel-description-item pe-lg-2_50 d-flex gap-sm-1 gap-xl-3 flex-column justify-content-center align-items-start h-100">
-                <h1 class = "fs-1"> Our bestsellers. </h1>
-                <p class = "fs-6"> Discover our most-loved treats! From perfectly flaky pastries to decadent desserts, 
+            <div class = "carousel-description-item d-flex gap-sm-1 gap-xl-3 flex-column justify-content-center justify-content-lg-start align-items-center h-100">
+                <h1 class = "fs-1  text-center"> Our bestsellers. </h1>
+                <p class = "carousel-subheader text-center px-3"> Discover our most-loved treats! From perfectly flaky pastries to decadent desserts, 
                   this selection showcases the irresistible favorites that keep customers coming back for more. 
                   Indulge in the best we have to offer, baked fresh daily. </p>
             </div>
 
             <!-- pictures -->
-            <div class = "image-carousel-item w-100 h-auto py-8 px-1">
-                <div id="carouselExampleCaptions" class="carousel slide">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-            
-                    <div class="carousel-inner w-100">
-                      <div class="carousel-item active w-100">
-                        <img src="./assets/croissant-bestseller.jpg" class="d-block w-100 bestseller-img" alt="...">
-                        <div class="dark-container">
-                          <div class = "carousel-description">
-                            <h5>Le Croissant</h5>
-                            <p><i>Our signature pastry with notes of butter and cinammon.</i></p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./assets/cutlet-bestseller.jpg" class="d-block w-100 bestseller-img" alt="...">
-                        <div class="dark-container">
-                          <div class = "carousel-description">
-                            <h5>Pork Cutlet Rice Bowl</h5>
-                            <p><i>A hearty, filling cutlet served on top of a bed of warm rice.</i></p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./assets/matcha-bestsellers.jpg" class="d-block w-100 bestseller-img" alt="...">
-                        <div class="dark-container">
-                          <div class = "carousel-description">
-                            <h5>Matcha Latte</h5>
-                            <p><i>The owner's favorite masterpiece, likewise loved by all.</i></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
+
+            <!-- row starts on large screens -->
+            <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/croissant-bestseller.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-block">
+                    <h5>Le Croissant</h5>
+                    <p><i>Our signature pastry with notes of butter and cinammon.</i></p>
+                  </div>
                 </div>
-            </div> 
+                <div class="carousel-item">
+                  <img src="assets/cutlet-bestseller.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-block">
+                    <h5>Pork Cutlet Rice Bowl</h5>
+                    <p><i>A hearty, filling cutlet served on top of a bed of warm rice.</i></p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/matcha-bestsellers.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-block">
+                    <h5>Matcha Latte</h5>
+                    <p><i>The owner's favorite masterpiece, likewise loved by all.</i></p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
         </div>
     </section>
 
@@ -249,11 +241,28 @@
       </div>
     </section>
 
-    <div class = "bg-charcoal py-8">
-
+    <div class = "bg-charcoal py-1 d-flex flex-column justify-content-center align-items-center text-white">
+      <p> 2025 Savory Haven | All Rights Reserved. Designed by Lanz Alexander Malto.</p>
     </div>
 
     <!-- scripts section -->
+    <script>
+      const images = [
+        './assets/review-1.jpg',
+        './assets/review-2.jpg',
+        './assets/review-3.jpg',
+        './assets/review-4.jpg',
+        './assets/review-5.jpg',
+        './assets/review-6.jpg',
+        './assets/review-7.jpg',
+        './assets/review-8.jpg',
+      ];
+
+      images.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });  
+    </script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 </body>
