@@ -1,16 +1,29 @@
 {
-  "name": "savory-haven",
+  "name": "savory-site",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "braces": "^3.0.3",
+    "detect-libc": "^1.0.3",
+    "fill-range": "^7.1.1",
+    "immutable": "^5.0.3",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "is-number": "^7.0.0",
+    "mdb-ui-kit": "^8.2.0",
+    "micromatch": "^4.0.7",
+    "node-addon-api": "^7.1.1",
+    "picomatch": "^2.3.1",
+    "sass": "^1.86.0",
+    "source-map-js": "^1.2.0",
+    "to-regex-range": "^5.0.1"
+  },
   "scripts": {
-    "build": "sass ./styles/styles.scss ./styles/styles.css",
-    "watch": "sass --watch styles/styles.scss styles/styles.css"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^5.3.3"
-  }
+  "license": "ISC"
 }
