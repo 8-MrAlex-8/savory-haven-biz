@@ -1,3 +1,7 @@
+* {
+    overflow-y: none;
+}
+
 #navbar-section {
     min-height: 15dvh;
 }
@@ -6,9 +10,25 @@ button.navbar-toggler {
     border: 2px solid #b68d40 !important;
 }
 
-#navbar-section *:not(.navbar-toggler *) {
+.nav-link:not(.active) {
     color: #f5f5f5 !important;
-    margin-right: 0.8rem;
+}
+
+.nav-link {
+    margin-right: 1.5rem;
+}
+
+a.active, a:not(.active):hover {
+    text-decoration: underline !important;
+    text-underline-offset: 0.32rem !important;
+}
+
+a:not(.active):hover {
+    color: #f5f5f5 !important;
+}
+
+.active {
+    color: #f4ebd0 !important;
 }
 
 #bestsellers {
@@ -68,15 +88,6 @@ button.navbar-toggler {
 .footer-logo {
     height: 8rem;
     width: auto;
-}
-
-a.active, a:not(.active):hover {
-    text-decoration: underline !important;
-    text-underline-offset: 0.32rem !important;
-}
-
-a.nav-link:hover {
-    color: #b68d40 !important;
 }
 
 div.carousel-caption {

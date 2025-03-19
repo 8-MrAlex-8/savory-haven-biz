@@ -4,7 +4,7 @@
  * ----------------------------------------
  */
 
-@keyframes myAnim {
+@keyframes fadeinRight {
 	0% {
 		opacity: 0;
 		transform: translateX(-50px);
@@ -16,17 +16,13 @@
 	}
 }
 
-#intro p, #intro h1 {
-    animation: myAnim 2s ease 0s 1 normal forwards;
-}
-
 /**
  * ----------------------------------------
  * bestseller fade-in animation
  * ----------------------------------------
  */
 
-@keyframes fadeInBestSeller {
+@keyframes fadeInLeft {
 	0% {
 		opacity: 0;
 		transform: translateX(50px);
@@ -38,10 +34,24 @@
 	}
 }
 
-#bestseller-text {
-    animation: fadeInBestSeller 1.5s ease 0s 1 normal forwards;
+@keyframes fadeInCenter {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
-#carouselExampleCaptions {
-    animation: fadeInBestSeller 3s ease 0s 1 normal forwards;
+#bestseller-text {
+    animation: fadeInLeft 1s ease 0s 1 normal forwards;
+}
+
+#carouselExampleCaptions, #map-embed {
+    animation: fadeInCenter 2.5s ease 0s 1 normal both;
+}
+
+#intro p, #intro h1, #location-text {
+    animation: fadeinRight 3s ease 0s 1 normal forwards;
 }
