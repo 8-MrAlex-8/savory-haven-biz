@@ -6,14 +6,6 @@
   This project was built as part of <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" target="_blank">Dr. Angela Yu's Complete Web Development Bootcamp</a> on Udemy.
 </p>
 
----
-
-<!-- ## 📸 Preview
-
-![Website Preview](https://via.placeholder.com/800x400?text=Business+Website+Preview) -->
-
----
-
 ## 🛠️ Built With
 
 - **HTML5**  
