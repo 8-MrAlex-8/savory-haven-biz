@@ -1,0 +1,47 @@
+ /**
+ * ----------------------------------------
+ * first section contents animation
+ * ----------------------------------------
+ */
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+#intro p, #intro h1 {
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+/**
+ * ----------------------------------------
+ * bestseller fade-in animation
+ * ----------------------------------------
+ */
+
+@keyframes fadeInBestSeller {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+#bestseller-text {
+    animation: fadeInBestSeller 1.5s ease 0s 1 normal forwards;
+}
+
+#carouselExampleCaptions {
+    animation: fadeInBestSeller 3s ease 0s 1 normal forwards;
+}

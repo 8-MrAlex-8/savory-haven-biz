@@ -1,5 +1,5 @@
 #navbar-section {
-    min-height: 15vh;
+    min-height: 15dvh;
 }
 
 button.navbar-toggler {
@@ -13,7 +13,7 @@ button.navbar-toggler {
 
 #bestsellers {
     background-color: #f5f5f5;
-    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23b68d40' fill-opacity='0.12'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23b68d40' fill-opacity='0.09'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 #bestseller-text > *, #bestseller-carousel > * {
@@ -30,25 +30,44 @@ button.navbar-toggler {
 }
 
 #intro {
-    min-height: 85vh;
+    min-height: 85dvh;
     background: white url('../_assets/bakery-stock.jpg') no-repeat center;
     background-size: cover;
 }
 
 .overlay {
     background-color: #00000094;
-    min-height: 85vh;
+    min-height: 85dvh;
     width: 100%;
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
 
 .carousel-item > img {
-    filter: brightness(0.65);
+    filter: brightness(0.9);
+}
+
+/* fix later */
+.carousel-caption {
+    background-color: #00000059;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.direction {
+    z-index: 1;
 }
 
 .target {
     margin-right: 0 !important;
+    font-style: italic;
+}
+
+.footer-logo {
+    height: 8rem;
+    width: auto;
 }
 
 a.active, a:not(.active):hover {
@@ -64,11 +83,18 @@ div.carousel-caption {
     padding-bottom: 0.35rem !important;
 }
 
+.carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
 iframe {
     height: 20rem;
     width: 100%;
 }
-
 
 @media (max-width: 420px) {
     p.target {
