@@ -6,19 +6,49 @@ button.navbar-toggler {
     border: 2px solid #b68d40 !important;
 }
 
+#navbar-section *:not(.navbar-toggler *) {
+    color: #f5f5f5 !important;
+    margin-right: 0.8rem;
+}
+
+#bestsellers {
+    background-color: #f5f5f5;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23b68d40' fill-opacity='0.12'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
 #bestseller-text > *, #bestseller-carousel > * {
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
-#bestsellers {
-    background-color: #f5f5f5;
-    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23b68d40' fill-opacity='0.08'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+#bestseller-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 12px;
 }
 
-#navbar-section * {
-    color: #f5f5f5 !important;
-    margin-right: 0.8rem;
+#intro {
+    min-height: 85vh;
+    background: white url('../_assets/bakery-stock.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.overlay {
+    background-color: #00000094;
+    min-height: 85vh;
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.carousel-item > img {
+    filter: brightness(0.65);
+}
+
+.target {
+    margin-right: 0 !important;
 }
 
 a.active, a:not(.active):hover {
@@ -28,4 +58,26 @@ a.active, a:not(.active):hover {
 
 a.nav-link:hover {
     color: #b68d40 !important;
+}
+
+div.carousel-caption {
+    padding-bottom: 0.35rem !important;
+}
+
+iframe {
+    height: 20rem;
+    width: 100%;
+}
+
+
+@media (max-width: 420px) {
+    p.target {
+        display: none !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 960px) {
+    p.target {
+        display: none !important;
+    }
 }
