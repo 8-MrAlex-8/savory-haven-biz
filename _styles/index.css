@@ -2,6 +2,7 @@
     overflow-y: none;
 }
 
+/*#region NAVBAR CODE*/
 #navbar-section {
     min-height: 15dvh;
 }
@@ -30,6 +31,8 @@ a:not(.active):hover {
 .active {
     color: #f4ebd0 !important;
 }
+
+/*#endregion*/
 
 #bestsellers {
     background-color: #f5f5f5;
@@ -85,11 +88,6 @@ a:not(.active):hover {
     font-style: italic;
 }
 
-.footer-logo {
-    height: 8rem;
-    width: auto;
-}
-
 div.carousel-caption {
     padding-bottom: 0.35rem !important;
 }
@@ -107,6 +105,13 @@ iframe {
     width: 100%;
 }
 
+
+/* #region FOOTER CODE */
+.footer-logo {
+    height: 8rem;
+    width: auto;
+}
+
 .link-list > li:hover {
     list-style-type: "→";
     position: relative;
@@ -116,6 +121,8 @@ iframe {
 .link-list-hover {
     margin-left: 0.5rem;
 }
+
+/* #endregion */
   
 @media (max-width: 420px) {
     p.target {
