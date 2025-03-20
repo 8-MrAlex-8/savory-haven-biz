@@ -48,7 +48,7 @@
     animation: fadeInLeft 1s ease 0s 1 normal forwards;
 }
 
-#carouselExampleCaptions, #map-embed {
+#carouselExampleCaptions, #map-embed, .navbar > *, footer > * {
     animation: fadeInCenter 2.5s ease 0s 1 normal both;
 }
 
