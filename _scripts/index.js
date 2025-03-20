@@ -3,3 +3,15 @@ document.querySelectorAll('.link-list-item').forEach((liItem) => {
         liItem.classList.add('link-list-hover');
     });
 });
+
+// this function checks if a particular element is 10% in the viewport
+
+// const isVisible = (element) => {
+//     let rect = element.getBoundingClientRect()
+//     let windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+
+//     return !(
+//         Math.floor(100 - (((rect.top >= 0 ? 0 : rect.top) / +-rect.height) * 100)) < 10 ||
+//         Math.floor(100 - ((rect.bottom - windowHeight) / rect.height) * 100) < 10
+//     )
+// };
