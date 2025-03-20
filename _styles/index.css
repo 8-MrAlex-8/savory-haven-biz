@@ -113,8 +113,8 @@ iframe {
     right: -4px;
 }
 
-.link-list {
-    padding-right: 1;
+.link-list-hover {
+    margin-left: 0.5rem;
 }
   
 @media (max-width: 420px) {
