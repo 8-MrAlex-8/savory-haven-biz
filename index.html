@@ -464,15 +464,18 @@
     <!-- FOOTER SECTION -->
     <footer class="text-white" style="background-color: #3f2c07">
       
-      <!-- Grid container  -->
       <div class="container-fluid p-4 gap-4 d-flex flex-row justify-content-center align-items-center">
 
-        <div class = "flex-item d-flex flex-column justify-content-center align-items-start gap-3 w-50">
+        <!-- left -->
+        <div class = "flex-item gap-3 w-10 d-none d-md-block">
           <!-- Section: Logo -->
-          <section id="footer-logo">
+          <section id="footer-logo d-none">
             <img src="_assets/bread-logo.png" class = "footer-logo"/>
           </section>
+        </div>
 
+        <!-- center -->
+        <div class = "flex-item gap-3 ms-4 ms-md-3 me-4 lh-lg w-50 ">
           <!-- Section: Text -->
           <section class="mb-4">
             <p>
@@ -486,54 +489,53 @@
           </section>
         </div>
 
-        <div class = "flex-item d-flex flex-column justify-content-center align-items-start w-50">
+        <!-- right -->
+        <div class = "flex-item d-flex flex-column justify-content-center align-items-start w-40">
           
           <!-- Section: Social media -->
-          <section class="mb-4">
-            <!-- Facebook -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #3b5998"
-              href="#!"
-              role="button"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
+          <section class="mb-4 d-flex flex-wrap flex-row justify-content-start align-items-center gap-3">
 
-            <!-- Instagram -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #ac2bac"
-              href="#!"
-              role="button"
-              ><i class="fab fa-instagram"></i
-            ></a>
+            <div class="row-item">
+              <span><i>Made by Lanz Alexander Malto</i></span>
+            </div>
+
+            <div class="row-item">
+              <!-- Facebook -->
+              <a
+                class="btn btn-primary btn-floating m-1"
+                style="background-color: #3b5998"
+                href="https://www.facebook.com/Lance.the.Gallade"
+                role="button"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
 
             <!-- Linkedin -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #0082ca"
-              href="#!"
-              role="button"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
+              <a
+                class="btn btn-primary btn-floating m-1"
+                style="background-color: #0082ca"
+                href="https://www.linkedin.com/in/lanz-alexander-malto/"
+                role="button"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
 
-            <!-- Github -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #333333"
-              href="#!"
-              role="button"
-              ><i class="fab fa-github"></i
-            ></a>
+              <!-- Github -->
+              <a
+                class="btn btn-primary btn-floating m-1"
+                style="background-color: #333333"
+                href="https://github.com/8-MrAlex-8"
+                role="button"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
           </section>
 
           <!-- Section: Links -->
           <section class="">
               <div class="mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-3">Links</h5>
-                <ul class="list-unstyled mb-0">
+                <h3 class="text-uppercase mb-3 fw-bold">Links</h3>
+                <ul class="mb-0 link-list">
                   <li>
-                    <a href="#!" class="text-white">Home</a>
+                    <a href="index.html" class="text-white">Home</a>
                   </li>
                   <li>
                     <a href="#!" class="text-white">About Us</a>
@@ -548,6 +550,7 @@
               </div>
           </section>
         </div>
+
       </div> 
 
       <!-- Copyright -->

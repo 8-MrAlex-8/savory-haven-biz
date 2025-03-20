@@ -18,7 +18,7 @@ button.navbar-toggler {
     margin-right: 1.5rem;
 }
 
-a.active, a:not(.active):hover {
+a.nav-link.active, a.nav-link:not(.active):hover {
     text-decoration: underline !important;
     text-underline-offset: 0.32rem !important;
 }
@@ -107,6 +107,16 @@ iframe {
     width: 100%;
 }
 
+.link-list > li:hover {
+    list-style-type: "→";
+    position: relative;
+    right: -4px;
+}
+
+.link-list {
+    padding-right: 1;
+}
+  
 @media (max-width: 420px) {
     p.target {
         display: none !important;
