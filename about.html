@@ -22,7 +22,6 @@
   </head>
 
   <body>
-    <section class = "d-none">
       <!-- #region HEADER -->
       <!-- NAVBAR -->
       <nav id="navbar-section" class="navbar navbar-expand-lg bg-oakbrown ps-2">
@@ -83,7 +82,7 @@
       </nav>
       <!-- #endregion -->
 
-      <section id = "page-intro" class = "d-none">
+      <section id = "page-intro ">
         <!-- first block -->
         <div class = "page-intro-one container-fluid row g-0">
           <div class="text-container text-white d-flex flex-column justify-content-center align-items-start text-center text-md-start col-6">
@@ -105,24 +104,49 @@
         </div>
       </section>
 
-      <section class = "our-team d-flex flex-column justify-content-center align-items-center">
-        <div class = "glass-container w-90 h-90 d-flex flex-column justify-content-start align-items-center gap-5">
+      <section class = "our-team d-flex flex-column justify-content-center align-items-center w-100 py-5">
+        <div class = "glass-container w-90 d-flex flex-column justify-content-start align-items-center gap-5">
 
-          <div class="section-title">
+          <div class="section-title ">
             <h1 class = "text-center mt-4 fw-bold">OUR TEAM</h1>
           </div>
 
-          <div class = "line-group d-flex flex-row justify-content-evenly align-items-center">
-            <div class="line-group-item">
-              <p>LEFT</p>
+          <!-- component creation here :: medium -->
+          <div class = "line-group container-fluid d-flex flex-row justify-content-evenly align-items-center">
+            <!-- left button -->
+            <div class="line-group-item chevron chevron-left">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>      
             </div>
-            <div class="line-group-item image-item bg-oakbrown">
 
+            <!-- image section -->
+
+            <div class="line-group-item image-item d-none d-md-block">
+              <img src = "_assets/barista-2.jpg" class = "person-img-a img-fluid rounded unfocused">
             </div>
-            <div class="line-group-item">
-              <p>RIGHT</p>
+
+            <div class="line-group-item image-item d-block">
+              <img src = "_assets/owner.jpg" class = "person-img-b img-fluid rounded focused">
             </div>
+
+            <div class="line-group-item image-item d-none d-md-block">
+              <img src = "_assets/manager.jpg" class = "person-img-c img-fluid rounded unfocused">
+            </div>
+
+            <!-- right button -->
+            <div class="line-group-item chevron chevron-right">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+            </div>
+
           </div>
+
+          <!-- text section -->
+
+          <div class = "mb-4 text-center">
+            <h3> NAME </h3>
+            <p> description </p>
+          </div>
+
+
         </div>
       </section>
 
@@ -231,59 +255,28 @@
         </footer>
       </footer>
       
-        <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"
-      ></script>
-
-      <!-- Reviews Section Masonry Layout -->
       <script
-        src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
-        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
-        crossorigin="anonymous"
-        async
-      ></script>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Reviews Section Masonry Layout -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <!-- Image Loaded CDN -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <!-- MDB 5 Toolkit CDN Dependencies -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.umd.min.js"
+    ></script>
 
-      <!-- Image Loaded CDN -->
-      <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-
-      <!-- MDB 5 Toolkit CDN Dependencies -->
-      <script
-        type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.umd.min.js"
-      ></script>
-
-      <!-- <script src = "_scripts/index.js"></script> -->
       <!-- #endregion -->
-    </section>
 
-
-    <!-- component creation here -->
-    <div class = "line-group container-fluid d-flex flex-row justify-content-evenly align-items-center">
-      <!-- left button -->
-      <div class="line-group-item ">
-        <p>LEFT</p>
-      </div>
-
-      <!-- image section -->
-      <div class="line-group-item image-item d-none d-md-block">
-        <img src = "_assets/owner.jpg" class = "person-img img-fluid rounded float-left">
-      </div>
-
-      <div class="line-group-item image-item">
-          <img src = "_assets/owner.jpg" class = "person-img img-fluid">
-      </div>
-
-      <div class="line-group-item image-item d-none d-md-block">
-        <img src = "_assets/owner.jpg" class = "person-img img-fluid rounded float-right">
-      </div>
-      <!-- ---- ----  ---- ---- -->
-
-      <!-- right button -->
-      <div class="line-group-item">
-        <p>RIGHT</p>
-      </div>
-    </div>
-  </body>
+    <script src = "_scripts/about.js"></script>
+  </body> 
 </html>
