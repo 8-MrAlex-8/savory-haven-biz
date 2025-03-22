@@ -12,12 +12,12 @@ button.navbar-toggler {
 }
 
 .nav-link {
-    margin-right: 1.5rem;
+    margin-right: 1.5em;
 }
 
 a.nav-link.active, a.nav-link:not(.active):hover {
     text-decoration: underline !important;
-    text-underline-offset: 0.32rem !important;
+    text-underline-offset: 0.32em !important;
 }
 
 a:not(.active):hover {
@@ -32,7 +32,7 @@ a:not(.active):hover {
 
 /* #region FOOTER CODE */
 .footer-logo {
-    height: 8rem;
+    height: 8em;
     width: auto;
 }
 
@@ -43,7 +43,7 @@ a:not(.active):hover {
 }
 
 .link-list-hover {
-    margin-left: 0.5rem;
+    margin-left: 0.5em;
 }
 
 /* #endregion */
@@ -103,4 +103,53 @@ a:not(.active):hover {
 .unfocused {
     max-height: 45dvh;
     filter: opacity(0.4);
+}
+
+.our-story {
+    min-height: 100dvh;
+    background-color: #ecceab;
+}
+
+.collage-item {
+    height: 30dvh;
+    width: 90%;
+}
+
+.collage-item-one {
+    background: white url('../_assets/nurse-coffee.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.collage-item-two {
+    background: white url('../_assets/house-cafe.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.collage-item-three {
+    background: white url('../_assets/new-cafe.jpg') no-repeat center;
+    background-size: cover;
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .collage-item {
+        height: 50dvh !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .story-text, #description-target {
+        text-align: justify !important;
+        text-align-last: center !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .story-text {
+        text-align: start !important;
+        text-align-last: start !important;
+    }
+    
+    .collage-item {
+        height: 50dvh !important;
+    }
 }
