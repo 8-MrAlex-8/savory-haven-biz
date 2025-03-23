@@ -18,13 +18,12 @@
 
 ## 🎯 Project Features
 
-✅ Fully responsive design  
-✅ Modern UI with smooth animations  
-✅ SCSS partials for clean and modular stylesheets  
+✅ Clean and semantic HTML structure    
+✅ Self-made components using CSS & Bootstrap
+✅ Interactive elements using JavaScript  
 ✅ Custom Bootstrap theme overrides  
-✅ Interactive elements using vanilla JavaScript  
-✅ Clean and semantic HTML structure  
-✅ Optimized for mobile and desktop  
-✅ Hover effects and transitions for better UX  
+✅ SCSS partials for clean and modular stylesheets  
+✅ Modern, responsive design  
+✅ Hover effects, animations, and transitions available for better UX  
 
 
