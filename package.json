@@ -8,6 +8,7 @@
     "braces": "^3.0.3",
     "detect-libc": "^1.0.3",
     "fill-range": "^7.1.1",
+    "imagesloaded": "^5.0.0",
     "immutable": "^5.0.3",
     "is-extglob": "^2.1.1",
     "is-glob": "^4.0.3",

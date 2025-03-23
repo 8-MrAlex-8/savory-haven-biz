@@ -105,6 +105,9 @@ iframe {
     width: 100%;
 }
 
+.masonry-item {
+    padding-right: 16px !important;
+}
 
 /* #region FOOTER CODE */
 .footer-logo {

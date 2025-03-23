@@ -4,16 +4,14 @@ document.querySelectorAll('.link-list-item').forEach((liItem) => {
     });
 });
 
-var grid = document.querySelector('.masonry-container');
+const grid = document.querySelector('.masonry-container');
 
-imagesLoaded(grid, function () {
+imagesLoaded(grid, () => {
     new Masonry(grid, {
         itemSelector: '.masonry-item',
-        columnWidth: '.masonry-sizer',
         percentPosition: true
     });
 });
-
 
 // this function checks if a particular element is 10% in the viewport
 
