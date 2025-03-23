@@ -86,7 +86,7 @@ teamMembers.forEach((person) => {
 
 let index = 0;
 
-document.querySelector('.chevron-right').addEventListener("click", () => {
+function moveUp() {
     index = (index + 1) % teamMembers.length;
     document.querySelector('img.person-img-a').src = teamMembers[(index % teamMembers.length)].image;
     // current focus
@@ -95,16 +95,31 @@ document.querySelector('.chevron-right').addEventListener("click", () => {
     document.querySelector('#name-target').textContent = teamMembers[focusIndex].name;
     document.querySelector('#role-target').textContent = teamMembers[focusIndex].role;
     document.querySelector('#description-target').textContent = teamMembers[focusIndex].description;
-    document.querySelector('img.person-img-c').src = teamMembers[(index + 2) % teamMembers.length].image;
-});
+    document.querySelector('img.person-img-c').src = teamMembers[(focusIndex + 1) % teamMembers.length].image;
+}
 
-document.querySelector('.chevron-left').addEventListener("click", () => {
+function moveDown() {
     index--;
     if (index < 0) { index = teamMembers.length - 1; }
     document.querySelector('img.person-img-a').src = teamMembers[(index) % teamMembers.length].image;
     //current focus
-    document.querySelector('img.person-img-b').src = teamMembers[(index + 1) % teamMembers.length].image;
-    document.querySelector('img.person-img-c').src = teamMembers[(index + 2) % teamMembers.length].image;
-});
+    focusIndex = (index + 1) % teamMembers.length;
+    document.querySelector('img.person-img-b').src = teamMembers[focusIndex].image;
+    document.querySelector('#name-target').textContent = teamMembers[focusIndex].name;
+    document.querySelector('#role-target').textContent = teamMembers[focusIndex].role;
+    document.querySelector('#description-target').textContent = teamMembers[focusIndex].description;
+    document.querySelector('img.person-img-c').src = teamMembers[(focusIndex + 1) % teamMembers.length].image;
+}
 
 
+document.querySelector('.chevron-right').addEventListener("click", moveUp);
+document.querySelector('.chevron-left').addEventListener("click", moveDown);
+document.addEventListener("keydown", (event) => {
+    console.log(event.code);
+    switch (event.code) {
+        case "KeyA":
+        case "ArrowLeft": setTimeout(moveDown, 100); break;
+        case "KeyD":
+        case "ArrowRight": setTimeout(moveUp, 100); break;
+    }
+})
