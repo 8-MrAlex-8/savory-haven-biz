@@ -4,6 +4,15 @@ document.querySelectorAll('.link-list-item').forEach((liItem) => {
     });
 });
 
+const grid = document.querySelector('.masonry-container');
+
+imagesLoaded(grid, () => {
+    new Masonry(grid, {
+        itemSelector: '.masonry-item',
+        percentPosition: true
+    });
+});
+
 // this function checks if a particular element is 10% in the viewport
 
 // const isVisible = (element) => {
