@@ -1,0 +1,155 @@
+/*#region NAVBAR CODE*/
+#navbar-section {
+    min-height: 15dvh;
+}
+
+button.navbar-toggler {
+    border: 2px solid #b68d40 !important;
+}
+
+.nav-link:not(.active) {
+    color: #f5f5f5 !important;
+}
+
+.nav-link {
+    margin-right: 1.5em;
+}
+
+a.nav-link.active, a.nav-link:not(.active):hover {
+    text-decoration: underline !important;
+    text-underline-offset: 0.32em !important;
+}
+
+a:not(.active):hover {
+    color: #f5f5f5 !important;
+}
+
+.active {
+    color: #f4ebd0 !important;
+}
+
+/*#endregion*/
+
+/* #region FOOTER CODE */
+.footer-logo {
+    height: 8em;
+    width: auto;
+}
+
+.link-list > li:hover {
+    list-style-type: "→";
+    position: relative;
+    right: -4px;
+}
+
+.link-list-hover {
+    margin-left: 0.5em;
+}
+
+/* #endregion */
+  
+.page-intro-one {
+    min-height: 85dvh;
+}
+
+.page-intro-two {
+    height: 100dvh;
+}
+
+.text-container {
+    background-color: black;
+}
+
+.image-container-one {
+    background: white url('../_assets/team.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.image-container-two {
+    background: white url('../_assets/team-2.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.our-team {
+    min-height: 100dvh;
+    border-top: 10px solid #6F4436;
+    border-bottom: 10px solid #6F4436;
+    background-color: #d7c6b4;
+}
+
+.glass-container {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.chevron {
+    filter: opacity(0.5);
+}
+
+.chevron:hover {
+    cursor: pointer;
+    filter: opacity(1);
+}
+
+.focused {
+    max-height: 60dvh;
+    filter: opacity(1);
+}
+
+.unfocused {
+    max-height: 45dvh;
+    filter: opacity(0.4);
+}
+
+.our-story {
+    min-height: 100dvh;
+    background-color: #ecceab;
+}
+
+.collage-item {
+    height: 30dvh;
+    width: 90%;
+}
+
+.collage-item-one {
+    background: white url('../_assets/nurse-coffee.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.collage-item-two {
+    background: white url('../_assets/house-cafe.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.collage-item-three {
+    background: white url('../_assets/new-cafe.jpg') no-repeat center;
+    background-size: cover;
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .collage-item {
+        height: 50dvh !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .story-text, #description-target {
+        text-align: justify !important;
+        text-align-last: center !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .story-text {
+        text-align: start !important;
+        text-align-last: start !important;
+    }
+    
+    .collage-item {
+        height: 50dvh !important;
+    }
+}

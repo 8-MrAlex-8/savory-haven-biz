@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Savory Haven</title>
+    <title>About Us | Savory Haven</title>
     <!-- Local styles -->
     <link rel="stylesheet" href="./_styles/about.css" />
     <link rel="stylesheet" href="./_styles/animations.css" />
@@ -22,171 +22,282 @@
   </head>
 
   <body>
-    <!-- NAVBAR -->
-    <nav id="navbar-section" class="navbar navbar-expand-lg bg-oakbrown ps-2">
-      <div class="container-fluid navbar-container">
-        <a class="navbar-brand" href="index.html">
-          <img
-            src="_assets/bread-logo.png"
-            fetchpriority="high"
-            height="65"
-            width="65"
-          />
-        </a>
-        <button
-          class="navbar-toggler bg-cream target"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon bg-cream"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Menu
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#">Bread and Pastries</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Rice Meals and Pasta</a>
-                </li>
-                <li><a class="dropdown-item" href="#">Beverages</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-
-    <!-- FOOTER SECTION -->
-    <footer class="text-white" style="background-color: #3f2c07">
-      
-      <div class="container-fluid p-4 gap-4 d-flex flex-row justify-content-center align-items-center">
-
-        <!-- left -->
-        <div class = "flex-item gap-3 w-10 d-none d-md-block">
-          <!-- Section: Logo -->
-          <section id="footer-logo d-none">
-            <img src="_assets/bread-logo.png" class = "footer-logo"/>
-          </section>
-        </div>
-
-        <!-- center -->
-        <div class = "flex-item gap-3 ms-4 ms-md-3 me-4 lh-lg w-50 ">
-          <!-- Section: Text -->
-          <section class="mb-4">
-            <p>
-              <i>
-                Since 2021, Savory Haven has been crafting delicious, artisan
-                baked goods and expertly-prepared brews using only the finest
-                ingredients. From our oven to your table—freshness and flavor in
-                every bite!
-              </i>
-            </p>
-          </section>
-        </div>
-
-        <!-- right -->
-        <div class = "flex-item d-flex flex-column justify-content-center align-items-start w-40">
-          
-          <!-- Section: Social media -->
-          <section class="mb-4 d-flex flex-wrap flex-row justify-content-start align-items-center gap-3">
-
-            <div class="row-item">
-              <span><i>Made by Lanz Alexander Malto</i></span>
-            </div>
-
-            <div class="row-item">
-              <!-- Facebook -->
-              <a
-                class="btn btn-primary btn-floating m-1"
-                style="background-color: #3b5998"
-                href="https://www.facebook.com/Lance.the.Gallade"
-                role="button"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-
-            <!-- Linkedin -->
-              <a
-                class="btn btn-primary btn-floating m-1"
-                style="background-color: #0082ca"
-                href="https://www.linkedin.com/in/lanz-alexander-malto/"
-                role="button"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-
-              <!-- Github -->
-              <a
-                class="btn btn-primary btn-floating m-1"
-                style="background-color: #333333"
-                href="https://github.com/8-MrAlex-8"
-                role="button"
-                ><i class="fab fa-github"></i
-              ></a>
-            </div>
-          </section>
-
-          <!-- Section: Links -->
-          <section class="">
-              <div class="mb-4 mb-md-0">
-                <h3 class="text-uppercase mb-3 fw-bold">Links</h3>
-                <ul class="mb-0 link-list">
+      <!-- #region HEADER -->
+      <!-- NAVBAR -->
+      <nav id="navbar-section" class="navbar navbar-expand-lg bg-oakbrown ps-2">
+        <div class="container-fluid navbar-container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="_assets/bread-logo.png"
+              fetchpriority="high"
+              height="65"
+              width="65"
+            />
+          </a>
+          <button
+            class="navbar-toggler bg-cream target"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon bg-cream"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Menu
+                </a>
+                <ul class="dropdown-menu">
                   <li>
-                    <a href="index.html" class="text-white link-list-item">Home</a>
+                    <a class="dropdown-item" href="#">Bread and Pastries</a>
                   </li>
                   <li>
-                    <a href="#!" class="text-white link-list-item">About Us</a>
+                    <a class="dropdown-item" href="#">Rice Meals and Pasta</a>
                   </li>
-                  <li>
-                    <a href="#!" class="text-white link-list-item">Contact Us</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white link-list-item">Menu</a>
-                  </li>
+                  <li><a class="dropdown-item" href="#">Beverages</a></li>
                 </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- #endregion -->
+
+      <section id = "page-intro ">
+        <!-- first block -->
+        <div class = "page-intro-one container-fluid row g-0">
+          <div class="text-container text-white d-flex flex-column justify-content-center align-items-start text-center text-md-start col-6">
+            <h1 class = "mx-4 mb-4 px-md-3">Simply a team of rockstars.</h1>
+            <p class = "mx-4 px-md-3">The Savory Haven staff is THE life of the party. With them, there’s never a dull moment.</p>
+          </div>
+          <div class="image-container-one col-6"></div>
+        </div>
+
+        <!-- second block -->
+        <div class = "page-intro-two container-fluid row g-0">
+          <div class="image-container-two col-6"></div>
+          <div class="text-container text-white d-flex flex-column justify-content-center text-center text-md-end col-6">
+            <h1 class = "mx-4 mb-4 px-md-3">No matter the vibe, they can jive.</h1>
+            <p class = "mx-4 px-md-3">
+              Whether you're up for a quiet moment or a lively chat, our baristas and bakers are ready to make your day.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class = "our-team d-flex flex-column justify-content-center align-items-center w-100 py-5 bg-darkvanilla">
+        <div class = "glass-container w-90 d-flex flex-column justify-content-start align-items-center gap-5">
+
+          <div class="section-title ">
+            <h1 class = "text-center mt-4 fw-bold">OUR TEAM</h1>
+          </div>
+
+          <!-- component creation here :: medium -->
+          <div class = "line-group container-fluid d-flex flex-row justify-content-evenly align-items-center">
+            <!-- left button -->
+            <div class="line-group-item chevron chevron-left">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>      
+            </div>
+
+            <!-- image section -->
+
+            <div class="line-group-item image-item d-none d-md-block">
+              <img src = "_assets/barista-2.jpg" class = "person-img-a img-fluid rounded unfocused">
+            </div>
+
+            <div class="line-group-item image-item d-block">
+              <img src = "_assets/owner.jpg" class = "person-img-b img-fluid rounded focused">
+            </div>
+
+            <div class="line-group-item image-item d-none d-md-block">
+              <img src = "_assets/manager.jpg" class = "person-img-c img-fluid rounded unfocused">
+            </div>
+
+            <!-- right button -->
+            <div class="line-group-item chevron chevron-right">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+            </div>
+
+          </div>
+
+          <!-- text section -->
+
+          <div class = "mb-4 text-center">
+            <h3 class = "mx-3"> 
+              <span id = "name-target"> Gilbert</span>, 
+              <span id = "role-target"> Owner & Manager </span> 
+            </h3>
+            <p id = "description-target" class = "mt-4 mx-5"> The heart and vision behind Savory Haven, Gilbert brings a passion 
+              for great food and warm hospitality. As both owner and manager, he's here daily 
+              making sure everything runs smoothly—whether it's sourcing the best ingredients or 
+              greeting regulars by name. You'll often catch him chatting with guests, always 
+              making sure everyone feels right at home. </p>
+          </div>
+
+
+        </div>
+      </section>
+
+      <section class = "our-story container-fluid g-0 text-center d-flex flex-column flex-lg-row
+        justify-content-center align-items-center gap-3 py-5">
+        <div class = "w-100 w-md-50 mx-5">
+          <h3 class = "mb-4 fw-bold text-lg-start">OUR STORY</h3>
+          <p class = "story-text lh-lg mx-5 mx-lg-0">
+            In September 2020, during the height of the pandemic, we watched as frontliners 
+            worked tirelessly to keep our community safe. Wanting to show our gratitude, 
+            we brewed up a plan—literally. One of us, a former barista at the beloved 
+            MoonMoon's Café, dusted off an old espresso machine, and together, we started 
+            handing out free coffee and pastries to healthcare workers and essential personnel 
+            in our neighborhood. <br><br>
+            
+            What began as small acts of kindness quickly grew. 
+            By February 2021, our homemade brews and baked goods had gained a loyal following, 
+            and we found ourselves running a cozy at-home business. Orders poured in from 
+            friends, family, and neighbors who had heard about our story and wanted a taste 
+            of the coffee and pastries we had shared so freely. <br><br>
+            
+            In August 2021, we took a leap of faith and opened our first brick-and-mortar 
+            store. What started as a tiny  space with a couple of tables has since expanded 
+            into a warm and welcoming café where everyone—from frontliners to first-time 
+            visitors—feels right at home. <br><br>
+
+            <b>Our mission remains the same: to serve great coffee, delicious pastries, and 
+            kindness in every cup.</b>
+          </p>
+        </div>
+
+        <div class = "d-flex flex-column justify-content-evenly align-items-center gap-3 w-100 w-md-50">
+          <div class="collage-item collage-item-one bg-oakbrown h-lg-30 rounded"></div>
+          <div class="collage-item collage-item-two bg-offwhite h-lg-30 rounded"></div>
+          <div class="collage-item collage-item-three bg-tan h-lg-30 rounded"></div>
+        </div>
+      </section>
+
+      <!-- #region FOOTER + SCRIPTS -->
+      <!-- FOOTER SECTION -->
+      <footer class="text-white" style="background-color: #3f2c07">
+        
+        <div class="container-fluid p-4 gap-4 d-flex flex-row justify-content-evenly align-items-center">
+
+          <!-- left -->
+          <div class = "flex-item gap-3 w-10 d-none d-md-block">
+            <!-- Section: Logo -->
+            <section id="footer-logo d-none">
+              <img src="_assets/bread-logo.png" class = "footer-logo"/>
+            </section>
+          </div>
+
+          <!-- center -->
+          <div class = "flex-item gap-3 ms-4 ms-md-3 me-4 lh-lg w-50 ">
+            <!-- Section: Text -->
+            <section class="mb-4">
+              <p>
+                <i>
+                  Since 2021, Savory Haven has been crafting delicious, artisan
+                  baked goods and expertly-prepared brews using only the finest
+                  ingredients. From our oven to your table—freshness and flavor in
+                  every bite!
+                </i>
+              </p>
+            </section>
+          </div>
+
+          <!-- right -->
+          <div class = "flex-item d-flex flex-column justify-content-center align-items-start w-40">
+            
+            <!-- Section: Social media -->
+            <section class="mb-4 d-flex flex-wrap flex-row justify-content-start align-items-center gap-3">
+
+              <div class="row-item">
+                <span><i>Made by Lanz Alexander Malto</i></span>
               </div>
-          </section>
-        </div>
 
-      </div> 
+              <div class="row-item">
+                <!-- Facebook -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #3b5998"
+                  href="https://www.facebook.com/Lance.the.Gallade"
+                  role="button"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
 
-      <!-- Copyright -->
-      <footer class="text-white bg-oakbrown">
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-          © 2025 Copyright: Savory Haven
-        </div>
+              <!-- Linkedin -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #0082ca"
+                  href="https://www.linkedin.com/in/lanz-alexander-malto/"
+                  role="button"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+
+                <!-- Github -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #333333"
+                  href="https://github.com/8-MrAlex-8"
+                  role="button"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </section>
+
+            <!-- Section: Links -->
+            <section class="">
+                <div class="mb-4 mb-md-0">
+                  <h3 class="text-uppercase mb-3 fw-bold">Links</h3>
+                  <ul class="mb-0 link-list">
+                    <li>
+                      <a href="index.html" class="text-white link-list-item">Home</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white link-list-item">About Us</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white link-list-item">Contact Us</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white link-list-item">Menu</a>
+                    </li>
+                  </ul>
+                </div>
+            </section>
+          </div>
+
+        </div> 
+
+        <!-- Copyright -->
+        <footer class="text-white bg-oakbrown">
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2025 Copyright: Savory Haven
+          </div>
+        </footer>
       </footer>
-    </footer>
-    
+      
       <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-
     <!-- Reviews Section Masonry Layout -->
     <script
       src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
@@ -194,16 +305,16 @@
       crossorigin="anonymous"
       async
     ></script>
-
     <!-- Image Loaded CDN -->
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-
     <!-- MDB 5 Toolkit CDN Dependencies -->
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.umd.min.js"
     ></script>
 
-    <!-- <script src = "_scripts/index.js"></script> -->
-  </body>
+      <!-- #endregion -->
+
+    <script src = "_scripts/about.js"></script>
+  </body> 
 </html>
