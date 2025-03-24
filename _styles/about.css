@@ -52,8 +52,30 @@ a:not(.active):hover {
     min-height: 85dvh;
 }
 
-.page-intro-two {
+.page-intro-two, .vision, .mission {
     height: 100dvh;
+}
+
+.vision-head, .mission-head, .vision-body, .mission-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vision-head, .mission-head {
+    height: 25dvh;
+}
+
+.mission-head {
+    background-color: #0c0b0b;
+    box-shadow: -5px 0px 5px 0px rgba(94,94,94,0.75);
+-webkit-box-shadow: -5px 0px 5px 0px rgba(94,94,94,0.75);
+-moz-box-shadow: -5px 0px 5px 0px rgba(94,94,94,0.75);
+}
+
+.vision-body, .mission-body {
+    height: 75dvh; 
 }
 
 .text-container {
