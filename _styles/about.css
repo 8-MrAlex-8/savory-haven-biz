@@ -69,9 +69,9 @@ a:not(.active):hover {
 
 .mission-head {
     background-color: #0c0b0b;
-    box-shadow: -5px 0px 5px 0px rgba(94,94,94,0.75);
--webkit-box-shadow: -5px 0px 5px 0px rgba(94,94,94,0.75);
--moz-box-shadow: -5px 0px 5px 0px rgba(94,94,94,0.75);
+    box-shadow: -5px 0px 5px 0px rgba(46, 46, 46, 0.75);
+-webkit-box-shadow: -5px 0px 5px 0px rgba(46, 46, 46, 0.75);
+-moz-box-shadow: -5px 0px 5px 0px rgba(46, 46, 46, 0.75);
 }
 
 .vision-body, .mission-body {
@@ -154,7 +154,7 @@ a:not(.active):hover {
 
 @media (min-width: 576px) and (max-width: 991px) {
     .collage-item {
-        height: 50dvh !important;
+        height: 40dvh !important;
     }
 }
 
@@ -172,6 +172,6 @@ a:not(.active):hover {
     }
     
     .collage-item {
-        height: 50dvh !important;
+        height: 30dvh !important;
     }
 }
