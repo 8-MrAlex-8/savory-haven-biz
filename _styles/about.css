@@ -118,12 +118,12 @@ a:not(.active):hover {
 }
 
 .focused {
-    max-height: 60dvh;
+    height: 300px;
     filter: opacity(1);
 }
 
 .unfocused {
-    max-height: 45dvh;
+    height: 300px;
     filter: opacity(0.4);
 }
 

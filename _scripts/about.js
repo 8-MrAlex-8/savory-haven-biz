@@ -91,10 +91,10 @@ function moveUp() {
     document.querySelector('img.person-img-a').src = teamMembers[(index % teamMembers.length)].image;
     // current focus
     focusIndex = (index + 1) % teamMembers.length;
-    document.querySelector('img.person-img-b').src = teamMembers[focusIndex].image;
-    document.querySelector('#name-target').textContent = teamMembers[focusIndex].name;
-    document.querySelector('#role-target').textContent = teamMembers[focusIndex].role;
-    document.querySelector('#description-target').textContent = teamMembers[focusIndex].description;
+    document.querySelector('img.person-img-b').src = teamMembers[focusIndex].image; // object.image 
+    document.querySelector('#name-target').textContent = teamMembers[focusIndex].name; // object.name
+    document.querySelector('#role-target').textContent = teamMembers[focusIndex].role; // object.role
+    document.querySelector('#description-target').textContent = teamMembers[focusIndex].description; //object.description
     document.querySelector('img.person-img-c').src = teamMembers[(focusIndex + 1) % teamMembers.length].image;
 }
 
@@ -104,10 +104,10 @@ function moveDown() {
     document.querySelector('img.person-img-a').src = teamMembers[(index) % teamMembers.length].image;
     //current focus
     focusIndex = (index + 1) % teamMembers.length;
-    document.querySelector('img.person-img-b').src = teamMembers[focusIndex].image;
-    document.querySelector('#name-target').textContent = teamMembers[focusIndex].name;
-    document.querySelector('#role-target').textContent = teamMembers[focusIndex].role;
-    document.querySelector('#description-target').textContent = teamMembers[focusIndex].description;
+    document.querySelector('img.person-img-b').src = teamMembers[focusIndex].image; // object.image 
+    document.querySelector('#name-target').textContent = teamMembers[focusIndex].name; // object.name
+    document.querySelector('#role-target').textContent = teamMembers[focusIndex].role; // object.role
+    document.querySelector('#description-target').textContent = teamMembers[focusIndex].description; //object.description
     document.querySelector('img.person-img-c').src = teamMembers[(focusIndex + 1) % teamMembers.length].image;
 }
 
